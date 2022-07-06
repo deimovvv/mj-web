@@ -1,0 +1,286 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css);
+
+@font-face {
+    font-family: fontBold;
+    src: url(../fonts/Gotham\ Bold.otf)
+}
+
+@font-face{
+    font-family: fontMedium;
+    src: url(../fonts/Gotham\ Medium.otf);
+}
+
+/* Estilos generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+}
+
+
+h1{
+    font-family: fontMedium;
+}
+
+h2{
+    font-family: fontMedium;
+    font-size: 20px;
+}
+
+
+
+
+
+/* VIDEO */
+.video{
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+
+    z-index: -1;
+    object-fit: cover;}
+
+.video-vertical{
+    display: none;
+}
+
+/*CONTENEDOR */
+.container{
+    margin: 20px;
+    border: 1px solid white;
+    height: 95vh;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+    /* Iconos */
+
+ul li {
+    list-style-type: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;}
+
+.icons-container{
+    border: 1px solid white;
+    height: 25%;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    justify-content: center;
+    width: 50px;}
+
+i:hover{
+font-size: 21.5px;
+transition: ease;
+
+}
+
+
+/* Logo */
+
+
+/* Menu */
+
+.right-menu{
+    display: grid;
+   justify-content: end;
+   
+   
+   grid-template-rows: 130px ;
+
+}
+.menu-container{
+    border: 1px solid #fff;
+    width: 250px;
+    height: 130px;
+    border-radius: 6px;
+    border-bottom: 1px solid white;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.menu-desplegable{
+    border: 1px solid #fff;
+    border-radius: 6px;
+    width: 250px;
+    height: 240px;
+    flex-direction: column;
+    display: none ;
+    transition:  1s ease-in-out; 
+    transform: translatey(-300px);
+   
+    
+}
+
+
+ .show {
+     
+    transform: translateX(0);
+    
+    display: block;
+    
+    
+}  
+
+.menu-desplegable li {
+   
+    height: 120px ;
+    border-bottom: 1px solid white;
+    border-radius: 10px;
+    padding-top: 20%;
+    text-align: center;
+    
+}
+
+.menu-desplegable a {
+    font-size: 17px;
+    font-family: fontMedium;
+    text-decoration: none;
+}
+
+
+
+.menu-mj {
+    height: 75%;
+    padding: 1em;
+}
+.menu-mj h1 {
+    cursor: pointer;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #fff;
+    padding: .6em;
+    
+}
+
+.menu h2 {
+    padding-left: 10px;
+    font-size: 15px;
+    padding: 2.5px 0 0 6px;
+}
+/* ICONOS */
+.menu button{
+    background: none;
+    border: none;
+   
+}
+
+.menu i {
+    padding-right: 2px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.menu-mj1{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-mj1 a{
+        text-decoration: none;
+    }  
+
+
+
+  /*  RESPONSIVE  */
+  
+  @media (max-width: 450px) {
+    .container{
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "rigth-top"
+        "medio"
+        "under-center";
+    }
+
+    .icons-container{
+        grid-area: under-center;
+       flex-direction: row;
+      width: 200px;
+      justify-self: center;
+      align-self: end;
+      border-top-right-radius: 15px;
+      border-top-left-radius: 15px; 
+      border-bottom-right-radius: 0.002px; 
+      height: 40px;
+      
+    }
+   
+    .right-menu{
+        grid-area: rigth-top;
+    }
+.logo-container{
+    grid-area: medio;
+}
+.icons-container ul{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.video{
+ object-fit:inherit;
+    
+}
+
+.menu-container{
+    width: 200px;
+}
+
+.show{
+    width: 200px;
+    
+}
+
+.menu-desplegable{
+    height: 60px;
+}
+
+.menu-desplegable li {
+    height: 30px;
+    padding-top: 4px;
+}
+
+.menu-desplegable a{
+  font-size: 14px;
+}
+
+.video{
+    display: none;
+}
+
+.video-vertical{
+    top: 0%;
+    left: 0%;
+    display: block;
+    z-index: -1;
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+  }
+
+
+
+
+

@@ -1,0 +1,176 @@
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+
+  .reproductor1 {
+    width: 300px;
+    height: 200px;
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .player__controls {
+    display: flex;
+    width: 95%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 25px 0 5px 0;
+
+  }
+  
+  .player__btn {
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      background-color:#f02b87;
+      color: #fff;
+  }
+  .player__btn--medium{
+    min-width: 55px;
+    min-height: 55px;
+    
+  }
+
+  .bi-play-fill{
+    padding-left: 3px;
+    font-size: 35px;
+  }
+
+  .bi-pause-fill{
+    font-size: 35px;
+  }
+ 
+  
+  .player__btn--small {
+    border: #f51d82 solid 1px;
+    background-color: #fff;
+    min-width: 40px;
+    height: 40px;
+    
+  }
+
+  .bi-skip-start-fill{
+    color: #f51d82;
+    font-size: 20px;
+  }
+
+  .bi-skip-end-fill{
+    color: #f51d82;
+    font-size: 20px;
+  }
+  
+  .player__title {
+    font-weight: 600;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+  
+  .player__album {
+    width: 200px;
+  }
+  
+  .player__img {
+    border-radius: 8%;
+    
+  }
+  
+  .player__artist {
+    color: #f02b87;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 5px;
+    margin-bottom: 15px;
+
+  }
+  
+  .player__song {
+    font-size: 2em;
+    color:#f02b87;
+    margin: 10px 0px 5px 0px;
+  }
+ 
+    
+  .progress-area{
+    height:9px;
+    width: 82%;
+    background-color:white;
+    border-radius: 50px;
+    cursor: pointer;
+    border: #f51d82 solid 1px;
+  }
+  .progress-area .progress-bar{
+    height:7px;
+    width: 40%;
+    border-radius: inherit;
+    background: #f51d82; 
+    position:relative;
+  }
+
+  .progress-bar::before{
+    content: " ";
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    background: #f51d82;
+    border-radius: inherit;
+    top: 50%;
+    right: -5px;
+    transform: translateY(-50%);
+    background: inherit;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+
+  }
+  .progress-area:hover .progress-bar::before{
+    opacity:1;
+
+  }
+.progress-area .audio-duration{
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-top: 2px ;
+width: 100%;
+}
+.audio-duration div{
+  font-size: 13px;
+  color:#f274af;
+
+}
+
+
+.start {
+    flex: 1;
+  }
+  
+  .player__audio {
+    visibility:collapse;
+  }
+
+
+  
+  .hide {
+    display: none;
+  }
+  

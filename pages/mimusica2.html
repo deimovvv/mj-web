@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi musica</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/mimusica2.css">
+    <!-- reproductor -->
+    <link rel="stylesheet" href="../css/reproductor.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="col1">
+           <div class="i-container">
+            <h2><a class="inicio" href="../index.html">INICIO</a></h2>
+            <a href="../index.html"><i class="fa-solid fa-angle-left"></i></a>
+           </div>
+        </div>
+        <div class="col2">
+            <div class="mi-musica">
+                <h2>MI MUSICA</h2>  
+            </div>
+        </div>
+        <div class="col3">
+            <div class="card-container"> 
+                <div class="grid" id='card-js'>
+                <div class="card">
+
+                    <div class="img"><img src="../img/BIEN.png" alt="" /> </div>
+                    <div class="reproductor1">
+                
+                        <h3 class="player__song">BIEN</h3>
+                        <h2 class="player__artist">MJ</h2>
+                        
+                        <div class="progress-area">
+                        <div class="progress-bar"></div>
+                        <div class="audio-duration">
+                        
+                        </div>
+                        </div>
+                        <div class="player__controls">
+                        <div class="player__btn player__btn--small" id="backward">
+                            <i class="bi bi-skip-start-fill"></i>
+                        </div>
+                
+                        <div class="player__btn player__btn--medium play" id="play">
+                            <i class="bi bi-play-fill"></i>
+                            <i class="bi bi-pause-fill hide"></i>
+                        </div>
+                
+                        <div class="player__btn player__btn--small" id="forward">
+                            <i class="bi bi-skip-end-fill"></i>
+                        </div>
+                        </div>
+                
+                    <audio class="player__audio" controls loop id="audio">
+                        <source src="../assets/audio.mp3" type="audio/mpeg"/>
+                        </audio>
+                
+                        
+                       </div>
+                    </div>
+
+                 <div class="right-card"> 
+
+                    <div class="right-card-icons" >
+                        <div class="icon1" >  <a href="https://open.spotify.com/track/56G16TSkF8GrVQ8boKaRyx?si=741f2c13bdc34437" target='_blank'>  <i class="fa-brands fa-spotify">      </i> </a></div>
+                        <div class="icon2"><a href="https://www.youtube.com/channel/UChpdxFPr-qnf4d7Dz7UT2vQ" target="_blank"> <i class="fa-brands fa-youtube"></i></a></div>
+                    </div>
+              
+                </div>   
+
+
+                <div class="card">
+                    <div class="img"><img src="../img/4AM.png" alt="" /> </div>
+                   <div class="reproductor1">
+                
+                    <h3 class="player__song">4AM</h3>
+                    <h2 class="player__artist">MJ</h2>
+                    
+                    <div class="progress-area">
+                    <div class="progress-bar"></div>
+                    <div class="audio-duration">
+                    
+                    </div>
+                    </div>
+                    <div class="player__controls">
+                    <div class="player__btn player__btn--small" id="backward">
+                        <i class="bi bi-skip-start-fill"></i>
+                    </div>
+            
+                    <div class="player__btn player__btn--medium play" id="play">
+                        <i class="bi bi-play-fill"></i>
+                        <i class="bi bi-pause-fill hide"></i>
+                    </div>
+            
+                    <div class="player__btn player__btn--small" id="forward">
+                        <i class="bi bi-skip-end-fill"></i>
+                    </div>
+                    </div>
+            
+                <audio class="player__audio" controls loop id="audio">
+                    <source src="../assets/audio.mp3" type="audio/mpeg"/>
+                    </audio>
+            
+                    
+                   </div>
+                            
+                      
+                 </div>
+                 <div class="right-card"> 
+
+                    <div class="right-card-icons" >
+                        <div class="icon1" >  <a href="">  <i class="fa-brands fa-spotify">      </i> </a></div>
+                        <div class="icon2"><a href=""> <i class="fa-brands fa-youtube"></i></a></div>
+                    </div>
+              
+                </div> 
+             </div>
+        </div>
+
+    
+        
+        
+
+    </div>
+    </div>
+    <script src="../js/index.js"></script>
+    <script src="../js/card.js"></script>
+</body>
+</html>

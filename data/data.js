@@ -1,0 +1,1 @@
+// inyectar dinamicamente cards
